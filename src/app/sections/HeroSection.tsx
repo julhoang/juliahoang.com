@@ -2,17 +2,20 @@ import Image from "next/image";
 
 export default function HeroSection() {
     return (
-        <section className="flex flex-col items-center justify-center min-h-screen p-8 md:p-20 w-full border">
+        <section className="flex flex-col items-center justify-center min-h-screen p-8 md:p-20 w-full border-4 border-slate-50">
             <p className="font-medium text-md md:text-xl text-gray-800">Hey there, I’m</p>
             <Image
                 src="/julia.png"
                 alt="Julia Hoang"
                 width={350}
                 height={350}
+                priority={true}
                 className="rounded-full"
             />
             <h1 className="font-bold text-6xl md:text-9xl pb-3 -mt-5 text-center">Julia Hoang</h1>
-            <p className="font-medium text-xl md:text-2xl">Software Developer based in Vancouver 🇨🇦</p>
+            <p className="font-medium text-xl md:text-2xl">
+                Software Developer based in Vancouver 🇨🇦
+            </p>
 
             <div className="w-full md:w-1/2 text-center mt-5">
                 <p className="text-md md:text-xl mt-4">
@@ -21,27 +24,6 @@ export default function HeroSection() {
                     websites, I’m likely rallying on the tennis court 🎾.
                 </p>
             </div>
-
-            {/* <p className="font-medium text-xl mt-10 text-gray-600">
-                Scroll down to check out my projects, some silly games, and more!
-            </p>
-
-            <div className="animate-bounce animate-infinite animate-ease-in-out">
-                <svg
-                    className="w-8 h-15 text-grey-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="grey"
-                >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 9l-7 7-7-7"
-                    />
-                </svg>
-            </div> */}
         </section>
     );
 }
