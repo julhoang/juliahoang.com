@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface Hackathon {
     media: string;
     competition: string;
@@ -16,7 +18,7 @@ const hackathons: Hackathon[] = [
         description:
             "A game for elementary students to learn about the beautiful nature of British Columbia. Students have 2 minutes to find all emojis that would unlock different facts about BC's nature. Once the game finishes, students can take a quiz to test their understanding. Developed in 8 hours with my amazing team - Eduardo and Nishchint!",
         stack: ["NextJS", "CharkaUI", "localStorage"],
-        url: "https://devpost.com/software/study-spot-finder",
+        url: "https://github.com/julhoang/wec-2023-neossat",
         demo: "https://wec-2023-neossat.vercel.app/",
     },
     {
@@ -29,12 +31,12 @@ const hackathons: Hackathon[] = [
         url: "https://github.com/julhoang/code_hack_patient_app",
     },
     {
-        media: "",
+        media: "/notenetwork.png",
         competition: "UVic's VikeLabs Summer 2024 - 3rd place 🥉",
         projectName: "NoteNetwork 📚",
         description:
             "NoteNetwork is a platform where UVic students can share curated links and videos for specific courses, saving time and effort for future students. Developed in 5 hours with my besties - Chris and Khushboo!",
-        stack: ["NextJS", "Firebase", "RadixUI"],
+        stack: ["NextJS", "Firebase", "RadixUI", "shadcn/ui"],
         url: "https://github.com/julhoang/notenetwork/tree/main",
     },
 ];
@@ -65,15 +67,17 @@ function ProjectCard({ competition, projectName, description, stack, url, demo }
 
                 <div className="flex flex-col md:flex-row md:gap-0">
                     {demo && (
-                        <button
+                        <a
+                            href={demo}
                             type="button"
                             className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
                         >
                             View Demo
-                        </button>
+                        </a>
                     )}
 
-                    <button
+                    <a
+                        href={url}
                         type="button"
                         className="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 me-2 mb-2 w-fit"
                     >
@@ -91,7 +95,7 @@ function ProjectCard({ competition, projectName, description, stack, url, demo }
                             />
                         </svg>
                         View Code on GitHub
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -129,10 +133,11 @@ export default function HackathonSection() {
                 </div>
 
                 <div className="md:grid md:grid-cols-2 py-10 md:gap-10 h-fit">
-                    <video
-                        width={"100%"}
-                        src={hackathons[0].media}
-                        controls
+                    <Image
+                        alt="NoteNetwork mockup"
+                        src={hackathons[2].media}
+                        width={500}
+                        height={300}
                         className="rounded-lg mb-5 md:mb-0"
                     />
                     <ProjectCard {...hackathons[2]} />
