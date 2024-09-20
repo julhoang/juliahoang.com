@@ -8,7 +8,7 @@ export default function Home() {
         <main className="flex w-full text-center justify-center">
             <div className="flex flex-col w-full max-w-7xl">
                 <HeroSection />
-                {/* <ProjectSection /> */}
+                <ProjectSection />
                 <HackathonSection />
                 <GameSection />
             </div>

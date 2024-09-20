@@ -118,6 +118,7 @@ export default function HackathonSection() {
                         src={hackathons[0].media}
                         controls
                         className="rounded-lg mb-5 md:mb-0"
+                        preload="auto"
                     />
                     <ProjectCard {...hackathons[0]} />
                 </div>
@@ -128,6 +129,7 @@ export default function HackathonSection() {
                         width={"100%"}
                         src={hackathons[1].media}
                         controls
+                        preload="auto"
                         className="rounded-lg mb-5 md:mb-0"
                     />
                 </div>

@@ -45,7 +45,7 @@ export default function GameSection() {
                             width={500}
                             height={300}
                             alt={game.gameName}
-                            className="rounded-lg mb-5"
+                            className="rounded-lg mb-5 transition-all duration-300 hover:scale-105"
                         />
 
                         <a
