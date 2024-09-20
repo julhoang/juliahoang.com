@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
     return (
-        <section className="flex flex-col items-center justify-center min-h-screen p-8 md:p-20 w-full border-4 border-slate-50">
+        <section className="flex flex-col items-center justify-center min-h-96 p-8 md:p-20 w-full border-4 border-slate-50">
             <p className="font-medium text-md md:text-xl text-gray-800">Hey there, I’m</p>
             <Image
                 src="/julia.png"

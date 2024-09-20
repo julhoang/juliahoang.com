@@ -104,7 +104,7 @@ function ProjectCard({ competition, projectName, description, stack, url, demo }
 
 export default function HackathonSection() {
     return (
-        <div className="bg-slate-50 p-10 text-left">
+        <div className="bg-slate-50 p-5 sm:p-10 text-left">
             <h2 className="font-bold text-5xl md:text-7xl mb-2 text-blue-700">hackathons.</h2>
             <p className="text-lg md:text-xl md:w-1/2 mb-4 md:mb-8">
                 Adrenaline-fueled competitions, powered by too much coffee ☕, greasy pizza 🍕, and
@@ -134,12 +134,14 @@ export default function HackathonSection() {
 
                 <div className="md:grid md:grid-cols-2 py-10 md:gap-10 h-fit">
                     <Image
-                        alt="NoteNetwork mockup"
-                        src={hackathons[2].media}
+                        src="/notenetwork.png"
                         width={500}
                         height={300}
+                        alt="NoteNetwork mockup"
+                        layout="responsive"
                         className="rounded-lg mb-5 md:mb-0"
                     />
+
                     <ProjectCard {...hackathons[2]} />
                 </div>
             </div>
