@@ -1,6 +1,7 @@
 import HeroSection from "@/app/sections/HeroSection";
 import ProjectSection from "@/app/sections/ProjectSection";
 import HackathonSection from "@/app/sections/HackathonSection";
+import GameSection from "@/app/sections/GameSection";
 
 export default function Home() {
     return (
@@ -9,6 +10,7 @@ export default function Home() {
                 <HeroSection />
                 {/* <ProjectSection /> */}
                 <HackathonSection />
+                <GameSection />
             </div>
         </main>
     );

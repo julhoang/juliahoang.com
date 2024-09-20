@@ -138,7 +138,6 @@ export default function HackathonSection() {
                         width={500}
                         height={300}
                         alt="NoteNetwork mockup"
-                        layout="responsive"
                         className="rounded-lg mb-5 md:mb-0"
                     />
 
