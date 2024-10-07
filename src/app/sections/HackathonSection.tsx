@@ -140,7 +140,7 @@ export default function HackathonSection() {
                         width={500}
                         height={300}
                         alt="NoteNetwork mockup"
-                        className="rounded-lg mb-5 md:mb-0"
+                        className="rounded-lg mb-5 md:mb-0 transition-all duration-300 hover:scale-105"
                     />
 
                     <ProjectCard {...hackathons[2]} />
