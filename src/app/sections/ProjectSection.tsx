@@ -43,18 +43,17 @@ const projects: ProjectDetails[] = [
 
 export default function ProjectSection() {
     const styles = {
-        text: "text-emerald-700",
-        badge: "bg-green-200 text-emerald-800 dark:bg-green-900 dark:text-green-300",
+        text: "text-teal-700",
+        badge: "bg-teal-100 text-teal-800 dark:bg-green-900 dark:text-green-300",
         button: "focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800",
     };
     return (
         <div className="bg-teal-50 p-5 sm:p-10 text-left bg-opacity-25">
             {/*-------- Section header --------*/}
-            <h2 className="font-bold text-5xl md:text-7xl mb-2 text-emerald-700">web apps.</h2>
+            <h2 className="font-bold text-5xl md:text-7xl mb-2 text-teal-700">web apps.</h2>
             <p className="text-lg md:text-xl md:w-1/2 mb-4 md:mb-8">
-                I love building web apps that don’t just work well, but also look amazing. Usually,
-                I go for a minimalistic vibe—but this colorful website? Well, that's just another
-                side of me! Check out some of my favorite projects below!
+                I love building web apps that don’t just work well, but ideally also look clean and
+                sleek. Check out some of my favorite projects below!
             </p>
 
             {/*-------- Project listings --------*/}
@@ -64,7 +63,7 @@ export default function ProjectSection() {
                         src={projects[0].media}
                         width={600}
                         height={300}
-                        alt="NoteNetwork mockup"
+                        alt="Artisway business card"
                         className="rounded-lg mb-5 md:mb-0 transition-all duration-300 hover:scale-105"
                     />
                     <div className="flex flex-col gap-2">

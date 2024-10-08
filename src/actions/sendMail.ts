@@ -1,3 +1,4 @@
+"use server";
 import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({
@@ -10,15 +11,19 @@ const transporter = nodemailer.createTransport({
     },
 });
 
-export const sendMail = async (to: string) => {
+const sendMail = async (sender: string, email: string, message: string) => {
     try {
         await transporter.sendMail({
             from: process.env.FROM_ADDRESS,
-            to,
-            subject: "Hello from Personal Website",
-            text: "Hello, thanks for stopping by! I hope you're having a great day.",
+            to: process.env.FROM_ADDRESS,
+            subject: "Message from juliahoang.com",
+            text: `Name: ${sender}\nEmail: ${email}\nMessage: ${message}`,
         });
+
+        console.log("Message sent successfully!");
     } catch (error) {
         console.error(error);
     }
 };
+
+export default sendMail;

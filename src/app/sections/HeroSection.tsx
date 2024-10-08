@@ -15,7 +15,7 @@ export default function HeroSection() {
             />
 
             {/*-------- Hero Text --------*/}
-            <h1 className="font-bold text-6xl md:text-9xl pb-3 -mt-5 text-center text-amber-500">
+            <h1 className="font-bold text-6xl md:text-9xl pb-3 -mt-5 text-center text-orange-500">
                 Julia Hoang
             </h1>
 

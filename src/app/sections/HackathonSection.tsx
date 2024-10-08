@@ -72,7 +72,7 @@ export default function HackathonSection() {
                 <div className="md:grid md:grid-cols-2 py-10 md:gap-10 h-fit">
                     <Image
                         src="/notenetwork.png"
-                        width={500}
+                        width={600}
                         height={300}
                         alt="NoteNetwork mockup"
                         className="rounded-lg mb-5 md:mb-0 transition-all duration-300 hover:scale-105"
