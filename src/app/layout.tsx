@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
 
 import "./globals.css";
 
@@ -30,6 +31,7 @@ export default function RootLayout({
                 {children}
 
                 <GoogleAnalytics gaId={process.env.GA_MEASUREMENT_ID!} />
+                <Script src="../actions/navbar.js" />
             </body>
         </html>
     );

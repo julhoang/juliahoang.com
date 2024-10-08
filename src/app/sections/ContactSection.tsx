@@ -2,7 +2,10 @@ import ContactForm from "@/app/components/ContactForm";
 
 export default function ContactSection() {
     return (
-        <div className="p-5 sm:p-10 text-left border-4 border-slate-50">
+        <section
+            className="p-5 sm:p-10 text-left border-4 border-slate-50"
+            // id="contact"
+        >
             {/*-------- Section header --------*/}
             <h2 className="font-bold text-5xl md:text-7xl text-zinc-800">let's chat 😄</h2>
 
@@ -33,6 +36,6 @@ export default function ContactSection() {
                 {/*-------- Contact Form --------*/}
                 <ContactForm />
             </div>
-        </div>
+        </section>
     );
 }

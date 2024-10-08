@@ -3,10 +3,13 @@ import ProjectSection from "@/app/sections/ProjectSection";
 import HackathonSection from "@/app/sections/HackathonSection";
 import GameSection from "@/app/sections/GameSection";
 import ContactSection from "@/app/sections/ContactSection";
+import NavbarSection from "@/app/sections/NavbarSection";
 
 export default function Home() {
     return (
-        <div>
+        <div className="">
+            <NavbarSection />
+
             <main className="relative z-20 bg-white">
                 <div className="flex flex-col w-full max-w-7xl m-auto">
                     <HeroSection />
@@ -25,6 +28,8 @@ export default function Home() {
                     </p>
                 </footer>
             </div>
+
+            <div id="contact"></div>
         </div>
     );
 }
