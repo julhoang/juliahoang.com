@@ -26,7 +26,8 @@ const games: Game[] = [
 
 export default function GameSection() {
     return (
-        <div className="bg-orange-50 p-5 sm:p-10 text-left">
+        <div className="bg-orange-50 p-5 sm:p-10 text-left bg-opacity-50">
+            {/*-------- Section header --------*/}
             <h2 className="font-bold text-5xl md:text-7xl mb-2 text-orange-700">games.</h2>
             <p className="text-lg md:text-xl md:w-1/2 mb-4 md:mb-8">
                 I first learned to code back in grade 11 by making web games. Were they
@@ -34,6 +35,7 @@ export default function GameSection() {
                 Right? 😅
             </p>
 
+            {/*------- Game Grid -------*/}
             <div className="grid grid-rows sm:grid-cols-2 md:grid-cols-3 gap-5">
                 {games.map((game) => (
                     <div

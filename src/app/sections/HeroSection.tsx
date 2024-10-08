@@ -2,8 +2,10 @@ import Image from "next/image";
 
 export default function HeroSection() {
     return (
-        <section className="flex flex-col items-center justify-center min-h-96 p-8 md:p-20 w-full border-4 border-slate-50">
+        <section className="flex flex-col items-center justify-center min-h-96 p-8 md:p-20 w-full border-4 border-slate-50 pb-20">
             <p className="font-medium text-md md:text-xl">Hey there, I’m</p>
+
+            {/*-------- Hero Image --------*/}
             <Image
                 src="/julia.png"
                 alt="Julia Hoang"
@@ -11,9 +13,12 @@ export default function HeroSection() {
                 height={350}
                 priority={true}
             />
+
+            {/*-------- Hero Text --------*/}
             <h1 className="font-bold text-6xl md:text-9xl pb-3 -mt-5 text-center text-amber-500">
                 Julia Hoang
             </h1>
+
             <p className="font-medium text-xl md:text-2xl">
                 Software Developer based in Vancouver 🇨🇦
             </p>
@@ -25,6 +30,8 @@ export default function HeroSection() {
                     websites, I’m likely rallying on a tennis court.
                 </p>
             </div>
+
+            {/*-------- Social --------*/}
 
             <div className="w-full md:w-1/2 text-center mt-5">
                 <p className="text-sm md:text-lg my-4">Find me on:</p>
