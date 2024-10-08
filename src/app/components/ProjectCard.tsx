@@ -59,7 +59,8 @@ export default function ProjectCard({
                             <span
                                 key={tech}
                                 className={
-                                    "text-sm font-medium me-2 px-2 py-0.5 my-1 rounded " + styles.badge
+                                    "text-sm font-medium me-2 px-2 py-0.5 my-1 rounded " +
+                                    styles.badge
                                 }
                             >
                                 {tech}
@@ -72,7 +73,7 @@ export default function ProjectCard({
                 <div className="flex flex-col md:flex-row md:gap-0">
                     {demo && (
                         <SecondaryButton
-                            text={demoText || "View Demo"}
+                            text={demoText ?? "View Demo"}
                             url={demo}
                         />
                     )}
