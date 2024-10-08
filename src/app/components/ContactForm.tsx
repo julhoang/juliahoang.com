@@ -1,8 +1,15 @@
+"use client";
+import { useState } from "react";
 import sendMail from "@/actions/sendMail";
 
 export default function ContactForm() {
+    const [buttonText, setButtonText] = useState("Send message");
+    const [buttonDisabled, setButtonDisabled] = useState(false);
+    const [sent, setSent] = useState(false);
+
     async function handleSubmit(formData: FormData) {
-        "use server";
+        setButtonText("Sending...");
+        setButtonDisabled(true);
 
         const data = {
             name: formData.get("name") as string,
@@ -11,7 +18,15 @@ export default function ContactForm() {
         };
 
         if (data.name && data.email) {
-            await sendMail(data.name, data.email, data.message);
+            const success = await sendMail(data.name, data.email, data.message);
+
+            if (success) {
+                setSent(true);
+            } else {
+                alert("Message failed to send. Please try again later.");
+                setButtonText("Send message");
+                setButtonDisabled(false);
+            }
         }
     }
 
@@ -20,6 +35,7 @@ export default function ContactForm() {
             className="max-w-xl w-full"
             action={handleSubmit}
         >
+            {/* Name field */}
             <div className="mb-5">
                 <label
                     htmlFor="name"
@@ -35,6 +51,8 @@ export default function ContactForm() {
                     required
                 />
             </div>
+
+            {/* Email field */}
             <div className="mb-5">
                 <label
                     htmlFor="email"
@@ -51,6 +69,8 @@ export default function ContactForm() {
                     required
                 />
             </div>
+
+            {/* Message field */}
             <div className="mb-5">
                 <label
                     htmlFor="message"
@@ -67,12 +87,20 @@ export default function ContactForm() {
                 ></textarea>
             </div>
 
-            <button
-                type="submit"
-                className="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            >
-                Send message
-            </button>
+            {/* Submit button */}
+            {sent ? (
+                <p className="text-emerald-800 font-medium dark:text-white">
+                    Message sent 🎉! I'll get back to you as soon as I can.
+                </p>
+            ) : (
+                <button
+                    type="submit"
+                    disabled={buttonDisabled}
+                    className="text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                    {buttonText}
+                </button>
+            )}
         </form>
     );
 }

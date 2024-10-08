@@ -17,12 +17,14 @@ const sendMail = async (sender: string, email: string, message: string) => {
             from: process.env.FROM_ADDRESS,
             to: process.env.FROM_ADDRESS,
             subject: "Message from juliahoang.com",
-            text: `Name: ${sender}\nEmail: ${email}\nMessage: ${message}`,
+            text: `Name: ${sender}\nEmail: ${email}\nMessage:\n${message}`,
         });
 
         console.log("Message sent successfully!");
+        return true;
     } catch (error) {
         console.error(error);
+        return false;
     }
 };
 

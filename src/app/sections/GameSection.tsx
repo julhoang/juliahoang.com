@@ -1,28 +1,10 @@
-import Image from "next/image";
+import ImageRounded from "../components/ImageRounded";
 
 interface Game {
     media: string;
     gameName: string;
     url: string;
 }
-
-const games: Game[] = [
-    {
-        media: "pong.png",
-        gameName: "Pong",
-        url: "https://julhoang.github.io/exercise9/",
-    },
-    {
-        media: "horse.png",
-        gameName: "Albert and Simon's Adventure",
-        url: "https://julhoang.github.io/exercise10/",
-    },
-    {
-        media: "tic-tac-toe.png",
-        gameName: "Tic Tac Toe",
-        url: "https://julhoang.github.io/exercise8/",
-    },
-];
 
 export default function GameSection() {
     return (
@@ -42,12 +24,10 @@ export default function GameSection() {
                         key={game.gameName}
                         className="w-full text-center"
                     >
-                        <Image
-                            src={`/${game.media}`}
-                            width={500}
-                            height={300}
+                        <ImageRounded
+                            src={game.media}
                             alt={game.gameName}
-                            className="rounded-lg mb-5 transition-all duration-300 hover:scale-105"
+                            small={true}
                         />
 
                         <a
@@ -63,3 +43,21 @@ export default function GameSection() {
         </div>
     );
 }
+
+const games: Game[] = [
+    {
+        media: "/pong.png",
+        gameName: "Pong",
+        url: "https://julhoang.github.io/exercise9/",
+    },
+    {
+        media: "/horse.png",
+        gameName: "Albert and Simon's Adventure",
+        url: "https://julhoang.github.io/exercise10/",
+    },
+    {
+        media: "/tic-tac-toe.png",
+        gameName: "Tic Tac Toe",
+        url: "https://julhoang.github.io/exercise8/",
+    },
+];

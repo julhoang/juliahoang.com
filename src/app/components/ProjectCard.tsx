@@ -2,12 +2,13 @@ import GitHubButton from "./GitHubButton";
 
 export interface ProjectDetails {
     media: string;
-    competition?: string;
+    occasion?: string;
     projectName: string;
     description: string;
     stack: string[];
-    url: string;
+    url?: string;
     demo?: string;
+    demoText?: string;
     color: "blue" | "green";
 }
 
@@ -26,16 +27,17 @@ const blueStyles: CustomStyling = {
 const greenStyles: CustomStyling = {
     text: "text-teal-700",
     badge: "bg-teal-100 text-teal-800 dark:bg-green-900 dark:text-green-300",
-    button: "focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800",
+    button: "focus:outline-none text-white bg-teal-700 hover:bg-teal-900 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800",
 };
 
 export default function ProjectCard({
-    competition,
+    occasion,
     projectName,
     description,
     stack,
     url,
     demo,
+    demoText,
     color,
 }: ProjectDetails) {
     const styles = color == "blue" ? blueStyles : greenStyles;
@@ -45,7 +47,7 @@ export default function ProjectCard({
             <div className="flex flex-col justify-between h-full">
                 {/*-------- Project Details --------*/}
                 <div>
-                    <p className="font-semibold text-sm">{competition}</p>
+                    <p className="font-semibold text-sm">{occasion}</p>
                     <h3 className={"font-bold text-3xl my-2 " + styles.text}>{projectName}</h3>
                     <p
                         className="whitespace-normal"
@@ -75,11 +77,11 @@ export default function ProjectCard({
                             type="button"
                             className={styles.button}
                         >
-                            View Demo
+                            {demoText || "View Demo"}
                         </a>
                     )}
 
-                    <GitHubButton url={url} />
+                    {url && <GitHubButton url={url} />}
                 </div>
             </div>
         </div>
