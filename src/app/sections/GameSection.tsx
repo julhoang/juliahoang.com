@@ -44,17 +44,17 @@ export default function GameSection() {
 
 const games: Game[] = [
     {
-        media: "/pong.png",
+        media: "/games/pong.png",
         gameName: "Pong",
         url: "https://julhoang.github.io/exercise9/",
     },
     {
-        media: "/horse.png",
+        media: "/games/horse.png",
         gameName: "Albert and Simon's Adventure",
         url: "https://julhoang.github.io/exercise10/",
     },
     {
-        media: "/tic-tac-toe.png",
+        media: "/games/tic-tac-toe.png",
         gameName: "Tic Tac Toe",
         url: "https://julhoang.github.io/exercise8/",
     },

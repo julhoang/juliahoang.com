@@ -40,7 +40,7 @@ export default function HackathonSection() {
 
 const hackathons: ProjectDetails[] = [
     {
-        media: "/WEC_Game.mp4",
+        media: "/hackathons/WEC_Game.mp4",
         occasion: "Western Engineering Competition 2023 - 1st Place in Team Programming 🥇",
         projectName: "ExploreBC 🏕️",
         description:
@@ -51,7 +51,7 @@ const hackathons: ProjectDetails[] = [
         color: "blue",
     },
     {
-        media: "/MedMate_Client.mov",
+        media: "/hackathons/MedMate_Client.mov",
         occasion: "#islandHealth Code Hack 2023",
         projectName: "MedMate 💊",
         description:
@@ -61,7 +61,7 @@ const hackathons: ProjectDetails[] = [
         color: "blue",
     },
     {
-        media: "/notenetwork.png",
+        media: "/hackathons/notenetwork.png",
         occasion: "UVic's VikeLabs Summer 2024 - 3rd place 🥉",
         projectName: "NoteNetwork 📚",
         description:

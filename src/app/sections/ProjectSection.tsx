@@ -39,7 +39,7 @@ export default function ProjectSection() {
 
 const projects: ProjectDetails[] = [
     {
-        media: "/artisway.png",
+        media: "/apps/artisway.png",
         occasion: "Feb 2024 - Present",
         projectName: "Artisway.ca 🎨",
         description:
@@ -50,7 +50,7 @@ const projects: ProjectDetails[] = [
         color: "green",
     },
     {
-        media: "/pantrypal.mov",
+        media: "/apps/pantrypal.mov",
         occasion: "Jan - Apr 2023",
         projectName: "PantryPal 🥕",
         description:
@@ -60,7 +60,7 @@ const projects: ProjectDetails[] = [
         color: "green",
     },
     {
-        media: "/notella.mp4",
+        media: "/apps/notella.mp4",
         occasion: "Jun - Aug 2021",
         projectName: "Notella 📝",
         description:

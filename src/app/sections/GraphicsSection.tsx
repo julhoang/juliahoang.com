@@ -44,17 +44,17 @@ export default function GraphicsSection() {
 
 const projects: Graphics[] = [
     {
-        media: "/fish.png",
+        media: "/graphics/fish.png",
         name: "Fishy Fish",
         url: "https://julhoang.github.io/webgl-fish-graphics/",
     },
     {
-        media: "/plant.png",
+        media: "/graphics/plant.png",
         name: "Spinny Spin",
         url: "https://julhoang.github.io/webgl-plants-graphics/",
     },
     {
-        media: "/90s-lofi.png",
+        media: "/graphics/90s-lofi.png",
         name: "90s Lofi",
         url: "https://julhoang.github.io/90s-lofi/",
     },
