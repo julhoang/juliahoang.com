@@ -19,11 +19,11 @@ export default function HeroSection() {
                 Julia Hoang
             </h1>
 
-            <p className="font-medium text-xl md:text-2xl text-center">
+            <p className="font-medium text-lg md:text-2xl text-center">
                 Software Developer based in Vancouver 🇨🇦
             </p>
 
-            <div className="w-full md:w-1/2 text-center mt-5">
+            <div className="w-full md:w-1/2 text-center md:mt-5">
                 <p className="text-sm md:text-lg mt-4">
                     Fresh out of UVic with my Computer Science degree (woohoo!!), I’m freelancing
                     while hunting for my dream job! If I'm not at my desk building sleek apps and
@@ -31,9 +31,14 @@ export default function HeroSection() {
                 </p>
             </div>
 
+            <div className="flex flex-row w-full items-center justify-center sm:hidden -ml-5 mt-5">
+                <div className="blob green"></div>
+                <p className="font-medium text-sm">Available For Work</p>
+            </div>
+
             {/*-------- Social --------*/}
 
-            <div className="w-full md:w-1/2 text-center mt-10">
+            <div className="w-full md:w-1/2 text-center mt-5 sm:mt-10">
                 <a
                     href="https://www.linkedin.com/in/juliahoang/"
                     className="text-gray-900 bg-white border border-gray-700 focus:outline-none hover:bg-gray-900 hover:text-white focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-md px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"

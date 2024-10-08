@@ -17,6 +17,11 @@ export default function GameSection() {
                 Right? 😅
             </p>
 
+            <p className="md:hidden text-gray-700 text-sm pb-5">
+                *Sorry, these games are not really mobile-friendly. For the best experience, please view
+                them on a desktop or laptop.
+            </p>
+
             {/*------- Game Grid -------*/}
             <div className="grid grid-rows sm:grid-cols-2 md:grid-cols-3 gap-5">
                 {games.map((game) => (

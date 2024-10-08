@@ -17,6 +17,11 @@ export default function GraphicsSection() {
                 arts.
             </p>
 
+            <p className="md:hidden text-gray-700 text-sm pb-5">
+                *Sorry, some of these projects might not be mobile-friendly. For the best
+                experience, please view them on a desktop or laptop.
+            </p>
+
             {/*------- Graphics Grid -------*/}
             <div className="grid grid-rows sm:grid-cols-2 md:grid-cols-3 gap-5">
                 {projects.map((project) => (
