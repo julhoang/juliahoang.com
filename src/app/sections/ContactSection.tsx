@@ -5,7 +5,7 @@ export default function ContactSection() {
     return (
         <section
             className="p-5 sm:p-10 text-left border-4 border-slate-50"
-            // id="contact"
+            id="contact"
         >
             {/*-------- Section header --------*/}
             <h2 className="font-bold text-5xl md:text-7xl text-zinc-800">let's chat 😄</h2>
@@ -18,6 +18,7 @@ export default function ContactSection() {
                         leave a message using the form, or reach me via email or LinkedIn. I'll get
                         back to you as soon as I can!
                     </p>
+
 
                     <SecondaryButton
                         url="mailto:julia@juliahoang.com"

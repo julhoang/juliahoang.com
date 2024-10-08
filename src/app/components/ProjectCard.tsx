@@ -54,13 +54,12 @@ export default function ProjectCard({
                         dangerouslySetInnerHTML={{ __html: description }}
                     ></p>
 
-                    <div className="my-5">
+                    <div className="my-5 flex flex-wrap">
                         {stack.map((tech) => (
                             <span
                                 key={tech}
                                 className={
-                                    "text-sm font-medium me-2 px-2.5 py-0.5 rounded whitespace-pre-wrap " +
-                                    styles.badge
+                                    "text-sm font-medium me-2 px-2 py-0.5 my-1 rounded " + styles.badge
                                 }
                             >
                                 {tech}

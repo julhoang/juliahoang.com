@@ -20,7 +20,7 @@ export default function ImageRounded({
                 alt={alt}
                 priority={false}
                 className={
-                    "rounded-lg mb-5 transition-all duration-300 hover:scale-105 " +
+                    "rounded-lg mb-5 transition-all duration-300 hover:scale-105 max-w-full" +
                     (small ? " " : " md:mb-0")
                 }
             />

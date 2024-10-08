@@ -11,27 +11,22 @@ export default function Home() {
         <div className="">
             <NavbarSection />
 
-            <main className="relative z-20 bg-white">
+            <main>
                 <div className="flex flex-col w-full max-w-7xl m-auto">
                     <HeroSection />
                     <ProjectSection />
                     <HackathonSection />
                     <GraphicsSection />
                     <GameSection />
+                    <ContactSection />
+
+                    <footer className="p-5 text-center border-x-4 border-slate-50">
+                        <p className="text-xs text-gray-500">
+                            © 2024 Julia Hoang. All rights reserved.
+                        </p>
+                    </footer>
                 </div>
             </main>
-
-            <div className="sticky bottom-0 z-10 max-w-7xl m-auto">
-                <ContactSection />
-
-                <footer className="p-5 text-center border-x-4 border-slate-50">
-                    <p className="text-xs text-gray-500">
-                        © 2024 Julia Hoang. All rights reserved.
-                    </p>
-                </footer>
-            </div>
-
-            <div id="contact"></div>
         </div>
     );
 }
