@@ -2,7 +2,7 @@ import HeroSection from "@/app/sections/HeroSection";
 import ProjectSection from "@/app/sections/ProjectSection";
 import HackathonSection from "@/app/sections/HackathonSection";
 import GameSection from "@/app/sections/GameSection";
-import ContactSection from "./sections/ContactSection";
+import ContactSection from "@/app/sections/ContactSection";
 
 export default function Home() {
     return (
@@ -18,6 +18,12 @@ export default function Home() {
 
             <div className="sticky bottom-0 z-10 max-w-7xl m-auto">
                 <ContactSection />
+
+                <footer className="p-5 text-center border-x-4 border-slate-50">
+                    <p className="text-xs text-gray-500">
+                        © 2024 Julia Hoang. All rights reserved.
+                    </p>
+                </footer>
             </div>
         </div>
     );

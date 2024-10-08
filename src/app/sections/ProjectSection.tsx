@@ -4,7 +4,7 @@ import ImageRounded from "@/app/components/ImageRounded";
 
 export default function ProjectSection() {
     return (
-        <div className="bg-teal-50 p-5 sm:p-10 text-left bg-opacity-25">
+        <div className="bg-teal-50 p-5 sm:p-10 text-left bg-opacity-25 border-x-4 border-gray-50">
             {/*-------- Section header --------*/}
             <h2 className="font-bold text-5xl md:text-7xl mb-2 text-teal-700">web apps.</h2>
             <p className="text-lg md:text-xl md:w-1/2 mb-4 md:mb-8">
