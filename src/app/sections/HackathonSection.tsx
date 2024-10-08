@@ -4,7 +4,7 @@ import ImageRounded from "@/app/components/ImageRounded";
 
 export default function HackathonSection() {
     return (
-        <div className="bg-slate-50 p-5 sm:p-10 text-left">
+        <section className="bg-slate-50 p-5 sm:p-10 text-left">
             {/*-------- Section header --------*/}
             <h2 className="font-bold text-5xl md:text-7xl mb-2 text-blue-700">hackathons.</h2>
             <p className="text-lg md:text-xl md:w-1/2 mb-4 md:mb-8">
@@ -28,12 +28,13 @@ export default function HackathonSection() {
                     <ImageRounded
                         src={hackathons[2].media}
                         alt="NoteNetwork screenshot"
+                        url={hackathons[2].url}
                     />
 
                     <ProjectCard {...hackathons[2]} />
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

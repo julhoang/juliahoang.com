@@ -4,23 +4,36 @@ export default function ImageRounded({
     src,
     alt,
     small = false,
+    url,
 }: {
     src: string;
     alt: string;
     small?: boolean;
+    url?: string;
 }) {
-    return (
-        <Image
-            src={src}
-            width={small ? 500 : 600}
-            height={small ? 300 : 300}
-            alt={alt}
-            priority={false}
-            lazyRoot="lazy"
-            className={
-                "rounded-lg mb-5 transition-all duration-300 hover:scale-105" +
-                (small ? " " : " md:mb-0")
-            }
-        />
-    );
+    const ImageComponent = () => {
+        return (
+            <Image
+                src={src}
+                width={small ? 500 : 600}
+                height={300}
+                alt={alt}
+                priority={false}
+                className={
+                    "rounded-lg mb-5 transition-all duration-300 hover:scale-105 " +
+                    (small ? " " : " md:mb-0")
+                }
+            />
+        );
+    };
+
+    if (url) {
+        return (
+            <a href={url}>
+                <ImageComponent />
+            </a>
+        );
+    } else {
+        return <ImageComponent />;
+    }
 }

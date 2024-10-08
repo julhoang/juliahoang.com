@@ -2,6 +2,7 @@ import HeroSection from "@/app/sections/HeroSection";
 import ProjectSection from "@/app/sections/ProjectSection";
 import HackathonSection from "@/app/sections/HackathonSection";
 import GameSection from "@/app/sections/GameSection";
+import GraphicsSection from "@/app/sections/GraphicsSection";
 import ContactSection from "@/app/sections/ContactSection";
 import NavbarSection from "@/app/sections/NavbarSection";
 
@@ -15,6 +16,7 @@ export default function Home() {
                     <HeroSection />
                     <ProjectSection />
                     <HackathonSection />
+                    <GraphicsSection />
                     <GameSection />
                 </div>
             </main>

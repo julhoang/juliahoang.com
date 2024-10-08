@@ -8,7 +8,7 @@ interface Game {
 
 export default function GameSection() {
     return (
-        <div className="bg-orange-50 p-5 sm:p-10 text-left bg-opacity-50">
+        <section className="bg-orange-50 p-5 sm:p-10 text-left bg-opacity-50">
             {/*-------- Section header --------*/}
             <h2 className="font-bold text-5xl md:text-7xl mb-2 text-orange-700">games.</h2>
             <p className="text-lg md:text-xl md:w-1/2 mb-4 md:mb-8">
@@ -24,23 +24,21 @@ export default function GameSection() {
                         key={game.gameName}
                         className="w-full text-center"
                     >
-                        <ImageRounded
-                            src={game.media}
-                            alt={game.gameName}
-                            small={true}
-                        />
+                        <a href={game.url}>
+                            <ImageRounded
+                                src={game.media}
+                                alt={game.gameName}
+                                small={true}
+                            />
 
-                        <a
-                            href={game.url}
-                            type="button"
-                            className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
-                        >
-                            Play {game.gameName}
+                            <button className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
+                                Play {game.gameName}
+                            </button>
                         </a>
                     </div>
                 ))}
             </div>
-        </div>
+        </section>
     );
 }
 

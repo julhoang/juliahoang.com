@@ -1,4 +1,4 @@
-import GitHubButton from "./GitHubButton";
+import { GitHubButton, SecondaryButton } from "./Button";
 
 export interface ProjectDetails {
     media: string;
@@ -72,13 +72,10 @@ export default function ProjectCard({
                 {/*-------- Buttons --------*/}
                 <div className="flex flex-col md:flex-row md:gap-0">
                     {demo && (
-                        <a
-                            href={demo}
-                            type="button"
-                            className={styles.button}
-                        >
-                            {demoText || "View Demo"}
-                        </a>
+                        <SecondaryButton
+                            text={demoText || "View Demo"}
+                            url={demo}
+                        />
                     )}
 
                     {url && <GitHubButton url={url} />}

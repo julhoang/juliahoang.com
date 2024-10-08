@@ -1,4 +1,5 @@
 import ContactForm from "@/app/components/ContactForm";
+import { SecondaryButton } from "@/app/components/Button";
 
 export default function ContactSection() {
     return (
@@ -18,19 +19,15 @@ export default function ContactSection() {
                         back to you as soon as I can!
                     </p>
 
-                    <a
-                        href="mailto:julia@juliahoang.com"
-                        className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-900 hover:text-white focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-                    >
-                        Email
-                    </a>
+                    <SecondaryButton
+                        url="mailto:julia@juliahoang.com"
+                        text="Email"
+                    />
 
-                    <a
-                        href="https://www.linkedin.com/in/juliahoang/"
-                        className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-900 hover:text-white focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-                    >
-                        LinkedIn
-                    </a>
+                    <SecondaryButton
+                        url="https://www.linkedin.com/in/juliahoang/"
+                        text="LinkedIn"
+                    />
                 </div>
 
                 {/*-------- Contact Form --------*/}

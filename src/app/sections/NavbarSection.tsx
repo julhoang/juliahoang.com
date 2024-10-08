@@ -20,10 +20,7 @@ export default function NavbarSection() {
                     <p className="font-medium text-sm md:text-md">Available For Work</p>
                 </div>
 
-                <a
-                    href="#contact"
-                    className="text-gray-900 dark:text-white"
-                >
+                <a href="#contact">
                     <button className="text-sm text-white bg-gray-700 hover:bg-gray-800 rounded-lg px-5 py-2.5 focus:ring-black focus:outline-none focus:ring-4">
                         Contact
                     </button>
