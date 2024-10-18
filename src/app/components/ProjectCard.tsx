@@ -19,13 +19,13 @@ interface CustomStyling {
 }
 
 const blueStyles: CustomStyling = {
-    text: "text-blue-800",
-    badge: "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300",
+    text: "text-blue-800 dark:text-blue-600",
+    badge: "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-50",
     button: "text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 w-fit",
 };
 
 const greenStyles: CustomStyling = {
-    text: "text-teal-700",
+    text: "text-teal-700 dark:text-teal-200",
     badge: "bg-teal-100 text-teal-800 dark:bg-green-900 dark:text-green-300",
     button: "focus:outline-none text-white bg-teal-700 hover:bg-teal-900 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800",
 };

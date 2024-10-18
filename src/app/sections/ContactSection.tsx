@@ -4,13 +4,13 @@ import { SecondaryButton } from "@/app/components/Button";
 export default function ContactSection() {
     return (
         <section
-            className="p-5 sm:p-10 text-left border-4 border-slate-50"
+            className="p-5 sm:p-10 text-left border-4 border-slate-50 dark:border-x-4 dark:border-y-0 dark:border-slate-500"
             id="contact"
         >
             {/*-------- Section header --------*/}
-            <h2 className="font-bold text-5xl md:text-7xl text-zinc-800">let's chat 😄</h2>
+            <h2 className="font-bold text-5xl md:text-7xl text-zinc-800 dark:text-gray-200">let's chat 😄</h2>
 
-            <div className="md:grid md:grid-cols-2 gap-10 py-5 md:py-10 h-fit">
+            <div className="md:grid md:grid-cols-2 gap-10 py-5 md:py-10 h-fit dark:text-gray-300">
                 {/*-------- Blurb --------*/}
                 <div className="mb-10">
                     <p className="text-lg md:text-xl mb-6 md:mb-8">

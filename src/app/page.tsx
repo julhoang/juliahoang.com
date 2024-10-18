@@ -8,7 +8,7 @@ import NavbarSection from "@/app/sections/NavbarSection";
 
 export default function Home() {
     return (
-        <div className="">
+        <div className="bg-white dark:bg-slate-900">
             <NavbarSection />
 
             <main>
@@ -20,7 +20,7 @@ export default function Home() {
                     <GameSection />
                     <ContactSection />
 
-                    <footer className="p-5 text-center border-x-4 border-slate-50">
+                    <footer className="p-5 text-center border-x-4 border-slate-50 dark:border-slate-500 dark:border-y-4">
                         <p className="text-xs text-gray-500">
                             © 2024 Julia Hoang. All rights reserved.
                         </p>

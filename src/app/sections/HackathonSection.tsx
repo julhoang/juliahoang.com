@@ -4,7 +4,7 @@ import ImageRounded from "@/app/components/ImageRounded";
 
 export default function HackathonSection() {
     return (
-        <section className="bg-slate-50 p-5 sm:p-10 text-left">
+        <section className="bg-slate-50 p-5 sm:p-10 text-left dark:border-4 dark:text-gray-300 dark:border-slate-500 dark:bg-transparent">
             {/*-------- Section header --------*/}
             <h2 className="font-bold text-5xl md:text-7xl mb-2 text-blue-700">hackathons.</h2>
             <p className="text-lg md:text-xl md:w-1/2 mb-4 md:mb-8">

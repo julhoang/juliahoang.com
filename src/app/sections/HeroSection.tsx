@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function HeroSection() {
     return (
-        <section className="flex flex-col items-center justify-center min-h-96 p-8 md:p-20 w-full border-4 border-slate-50 pb-20 mt-12 ">
-            <p className="font-medium text-md md:text-xl">Hey there, I’m</p>
+        <section className="flex flex-col items-center justify-center min-h-96 p-8 md:p-20 w-full border-4 border-slate-50 pb-20 mt-12 dark:text-gray-300 dark:border-slate-500">
+            <p className="font-medium text-md md:text-xl dark:text-gray-400">Hey there, I’m</p>
 
             {/*-------- Hero Image --------*/}
             <Image
@@ -15,7 +15,7 @@ export default function HeroSection() {
             />
 
             {/*-------- Hero Text --------*/}
-            <h1 className="font-bold text-6xl md:text-9xl pb-3 -mt-5 text-center text-gray-800">
+            <h1 className="font-bold text-6xl md:text-9xl pb-3 -mt-5 text-center text-gray-800 dark:text-gray-200">
                 Julia Hoang
             </h1>
 
