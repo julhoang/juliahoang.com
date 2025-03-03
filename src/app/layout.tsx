@@ -7,13 +7,21 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], display: "swap", variable: "--font-inter" });
 
 export const metadata: Metadata = {
-    title: "Julia Hoang 👩‍💻 | Freelance Software Developer in Vancouver",
+    title: "Julia Hoang 👩‍💻 | Software Engineer & Web Developer in Vancouver",
     description:
-        "Julia Hoang is a freelance software developer with a passion for building sleek and robust web applications.",
+        "Julia Hoang is a software engineer and web developer based in Vancouver, specializing in crafting modern and user-friendly web applications.",
     keywords:
-        "freelancer, web developer, computer science, student, freelance, startup, co-founder",
+        "software engineer, web developer, full stack developer, UI/UX, React, Node.js, freelance, Vancouver, TypeScript, JavaScript, frontend, backend",
     authors: [{ name: "Julia Hoang" }],
     robots: "index, follow",
+    openGraph: {
+        title: "Julia Hoang | Software Engineer & Web Developer",
+        description:
+            "Building sleek and high-performance web applications with a focus on great user experiences.",
+        url: "https://www.juliahoang.com",
+        type: "website",
+        locale: "en_US",
+    },
 };
 
 export default function RootLayout({

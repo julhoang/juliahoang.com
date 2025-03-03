@@ -22,7 +22,7 @@ export default function Home() {
 
                     <footer className="p-5 text-center border-x-4 border-slate-50 dark:border-slate-500 dark:border-y-4">
                         <p className="text-xs text-gray-500">
-                            © 2024 Julia Hoang. All rights reserved.
+                            © 2025 Julia Hoang. All rights reserved.
                         </p>
                     </footer>
                 </div>

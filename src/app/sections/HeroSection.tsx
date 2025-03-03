@@ -25,16 +25,16 @@ export default function HeroSection() {
 
             <div className="w-full md:w-1/2 text-center md:mt-5">
                 <p className="text-sm md:text-lg mt-4">
-                    Fresh out of UVic with my Computer Science degree (woohoo!!), I’m freelancing
+                    {/* Fresh out of UVic with my Computer Science degree (woohoo!!), I’m freelancing
                     while hunting for my dream job! If I'm not at my desk building sleek apps and
-                    websites, I’m likely rallying on a tennis court.
+                    websites, I’m likely rallying on a tennis court. */}
                 </p>
             </div>
 
-            <div className="flex flex-row w-full items-center justify-center sm:hidden -ml-5 mt-5">
+            {/* <div className="flex flex-row w-full items-center justify-center sm:hidden -ml-5 mt-5">
                 <div className="blob green"></div>
                 <p className="font-medium text-sm">Available For Work</p>
-            </div>
+            </div> */}
 
             {/*-------- Social --------*/}
 

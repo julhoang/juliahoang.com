@@ -15,10 +15,10 @@ export default function NavbarSection() {
                     </a>
                 </div>
 
-                <div className="flex-row items-center hidden sm:flex pr-8 dark:text-gray-300">
+                {/* <div className="flex-row items-center hidden sm:flex pr-8 dark:text-gray-300">
                     <div className="blob green"></div>
                     <p className="font-medium text-sm md:text-md">Available For Work</p>
-                </div>
+                </div> */}
 
                 <a href="#contact">
                     <button className="text-sm font-semibold text-white bg-gray-700 hover:bg-gray-800 rounded-lg px-5 py-2.5 focus:ring-black focus:outline-none focus:ring-4 dark:text-gray-50">
